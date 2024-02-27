@@ -6,8 +6,8 @@
 	<description>Cordova plugin for detect root for Android, iOS.</description>
 	<license>MIT</license>
 	<keywords>cordova,root,detect</keywords>
-	<repo>https://github.com/neuxgithub/cordova-plugin-speechrecognition.git</repo>
-	<issue>https://github.com/neuxgithub/cordova-plugin-speechrecognition.git</issue>
+	<repo>https://github.com/chung-nick/TPI.cordova.RootDetection.git</repo>
+	<issue>https://github.com/chung-nick/TPI.cordova.RootDetection.git</issue>
 
 	<js-module name="RootDetection" src="www/RootDetection.js">
 		<clobbers target="cordova.plugins.RootDetection" />
