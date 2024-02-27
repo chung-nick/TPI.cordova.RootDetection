@@ -1,0 +1,19 @@
+{
+  "name": "Neux.cordova.RootDetection",
+  "version": "1.0.0",
+  "description": "Cordova plugin for detect root for Android, iOS.",
+  "cordova": {
+    "id": "Neux.cordova.RootDetection",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Neux.co",
+  "license": "MIT"
+}

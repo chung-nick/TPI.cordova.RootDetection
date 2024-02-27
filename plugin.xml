@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="Neux.cordova.RootDetection" version="1.0.0" 
+	xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>Detect root</name>
+	<description>Cordova plugin for detect root for Android, iOS.</description>
+	<license>MIT</license>
+	<keywords>cordova,root,detect</keywords>
+	<repo>https://github.com/neuxtitanteng/Neux.cordova.RootDetection.git</repo>
+	<issue>https://github.com/neuxtitanteng/Neux.cordova.RootDetection/issues</issue>
+
+	<js-module name="RootDetection" src="www/RootDetection.js">
+		<clobbers target="cordova.plugins.RootDetection" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="RootDetection">
+				<param name="android-package" value="Neux.cordova.RootDetection.RootDetection" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml" />
+		<source-file src="src/android/RootDetection.java" target-dir="src/Neux/cordova/RootDetection/RootDetection" />
+	</platform>
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="RootDetection">
+				<param name="ios-package" value="RootDetection" />
+			</feature>
+		</config-file>
+		<header-file src="src/ios/RootDetection.h" />
+		<source-file src="src/ios/RootDetection.m" />
+	</platform>
+</plugin>
